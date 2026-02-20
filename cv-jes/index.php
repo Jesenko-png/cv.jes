@@ -14,14 +14,11 @@
 		/></noscript>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="assets/css/aditional.css">
 
 	</head>
 	<body class="is-preload landing">
-		<div id="modal" class="modal-overlay active" style="background:red; z-index:2147483647">
-	<div style="background:#000;color:#fff;padding:40px">
-		TEST MODAL – AKO OVO NE VIDIS, PROBLEM JE HTML/CSS
-	</div>
-</div>
+	
 
 		<div id="page-wrapper">
 			<!-- Header -->
@@ -29,19 +26,26 @@
 				<h1 id="logo"><a href="index.html">Jesenko Idrizovic</a></h1>
 				<nav id="nav">
   	<ul>
-    	<li><a href="index.html">Home</a></li>
+    	<li><a href="index.html"><span data-i18n="home">Home</span></a></li>
     		<li>
-      			<a href="#">Erfahrung</a>
+      			<a href="#"><span data-i18n="experience">Erfahrung</span></a>
     <ul>
         <li><a href="#two">Arni Soft</a></li>
         <li><a href="#three">Freelance</a></li>
  <!-- 2 -->
       </ul>
-	  <li><a href="#four">Technische Kompetenzen</a></li>
-	  <li><a href="#five">Persönlische Stärken</a></li>
+	  <li><a href="#four"><span data-i18n="skills">Technische Kompetenzen</span></a></li>
+	  <li><a href="#five"><span data-i18n="strengths">Persönlische Stärken</span></a></li>
 	  </li>
-		</ul>
-	</nav>
+		<li>
+<a href="#">🌍</a>
+<ul >
+<li><a href="index.php" onclick="setLanguage('de')">Deutsch</a></li>
+<li><a href="indexen.php" onclick="setLanguage('en')">English</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </header>
 			<!-- Banner -->
 	<section id="banner">
@@ -75,10 +79,10 @@
 					style="min-height: 300px"
 				>
 					<p class="text-center fs-5 opis">
-						Ich bin ein motivierter Junior Backend Developer sowie diplomierter Bachelor-Ingenieur für Informationstechnologien mit solider Erfahrung in PHP und Laravel.
+						Ich bin ein motivierter Junior Backend Developer sowie diplomierter Bachelor-Ingenieur für Informationstechnologien mit solider <span data-i18n="experience">Erfahrung</span> in PHP und Laravel.
 Mein Fokus liegt auf der Entwicklung sauberer, wartbarer und effizienter serverseitiger Anwendungen.
 
-Ich habe praktische Erfahrung in der Arbeit mit MySQL-Datenbanken, objektorientierter Programmierung sowie Full-Stack-Entwicklung. Neben Backend-Logik habe ich auch an responsiven Frontend-Lösungen mit HTML, CSS, JavaScript und modernen Frameworks gearbeitet.
+Ich habe praktische <span data-i18n="experience">Erfahrung</span> in der Arbeit mit MySQL-Datenbanken, objektorientierter Programmierung sowie Full-Stack-Entwicklung. Neben Backend-Logik habe ich auch an responsiven Frontend-Lösungen mit HTML, CSS, JavaScript und modernen Frameworks gearbeitet.
 
 Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierliche Verbesserung und bin stets motiviert, neue Technologien zu lernen und mich fachlich weiterzuentwickeln.
 					</p>
@@ -87,7 +91,7 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 
 			<h1 class="iskustvo">
     <i class="fa-solid fa-briefcase"></i>
-    Erfahrung
+    <span data-i18n="experience">Erfahrung</span>
 </h1>
 
 			<!-- Arni -->
@@ -129,20 +133,18 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 						</ul>
 					</header>
 
-					<ul class="actions">
-						<li><a href="https://www.mietzsch.de/" class="button">www.mietzsch.de</a></li>
-					</ul>
+					
 				</div>
 			</section>
 			<!--PHP-->
 			<section id="three" class="spotlight style3 left">
 				<span class="image fit main bottom"
-					><img src="images/pexels-karola-g-6757648.jpg" alt=""
+					><img src="images/thumb-1920-698137.jpg" alt=""
 				/></span>
 				<div class="content">
 					<header>
 						<h4>
-							 Backend-Erfahrung (Freelance)
+							 Backend-<span data-i18n="experience">Erfahrung</span> (Freelance)
 						</h4>
 					</header>
 					<ul>
@@ -231,7 +233,7 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 			<section id="four" class="wrapper style1 special fade-up">
 	<div class="container">
 		<header class="major">
-			<h2>Technische Kompetenzen</h2>
+			<h2><span data-i18n="skills">Technische Kompetenzen</span></h2>
 		</header>
 
 		<div class="box alt">
@@ -296,30 +298,13 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 </section>
 
 
-					<footer class="major">
-						<ul class="actions special">
-							<li>
-								<button class="diploma">
-									<a
-										href="pdf/diploma.pdf"
-										target="_blank"
-										class="button diploma"
-										>Diplom</a
-									>
-								</button>
-							</li>
-						</ul>
-					</footer>
-				</div>
+				
+				
 			</section>
-			<div id="sprachen" class="sprachen">
-				<h2 class="sprachen">Sprachen</h2>
-				<ul>
-	<li><i class="fa-solid fa-globe"></i> Deutsch – fließend</li>
-	<li><i class="fa-solid fa-globe"></i> Englisch – fließend</li>
-</ul>
-
-			</div>
+			<div class="len">
+  <p><i class="fa-solid fa-globe"></i> German – fluent</p>
+  <p><i class="fa-solid fa-globe"></i> English – fluent</p>
+</div>
 <section id="five" class="wrapper style1 special fade-up">
 			<div class="container">
 	<header class="major">
@@ -400,12 +385,12 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 				</div>
 			</section>
 <ul class="actions">
-						<li><a href="#" class="button">Nach oben</a></li>
+						<li><a href="#" class="button"><span data-i18n="top">Nach oben</span></a></li>
 					</ul>
 					<section id="comment" class="wrapper style1 fade-up">
 	<div class="container">
 		<header class="major">
-			<h2>Kommentar hinterlassen</h2>
+			<h2><span data-i18n="comment">Kommentar hinterlassen</span></h2>
 		</header>
 
 		<form id="commentForm" method="POST" action="comment.php" class="comment-form">
@@ -432,7 +417,7 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 		<div class="col-12">
 			<ul class="actions">
 				<li>
-					<button type="submit" class="button primary">Kommentar senden</button>
+					<button type="submit" class="button primary"><span data-i18n="send">Kommentar senden</span></button>
 				</li>
 			</ul>
 		</div>
@@ -454,7 +439,7 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 				
 				
 				<ul class="copyright">
-					<li>&copy; JKO All rights reserved.</li>
+					<li>&copy; 2026 Jesenko Idrizovic </li>
 					
 				</ul>
 			</footer>
@@ -480,6 +465,40 @@ Ich arbeite gerne im Team, lege großen Wert auf Code-Qualität und kontinuierli
 		<script src="assets/js/main.js"></script>
 		<script src="comments.js"></script>
 		
-	</body>
+	
+<script>
+const translations = {
+de:{
+home:"Home",
+experience:"Erfahrung",
+skills:"Technische Kompetenzen",
+strengths:"Persönliche Stärken",
+languages:"Sprachen",
+comment:"Kommentar hinterlassen",
+send:"Kommentar senden",
+top:"Nach oben"
+},
+en:{
+home:"Home",
+experience:"Experience",
+skills:"Technical Skills",
+strengths:"Personal Strengths",
+languages:"Languages",
+comment:"Leave a comment",
+send:"Send comment",
+top:"Back to top"
+}
+};
+function setLanguage(lang){
+localStorage.setItem("lang",lang);
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+const k=el.dataset.i18n;
+if(translations[lang][k]) el.textContent=translations[lang][k];
+});
+}
+document.addEventListener("DOMContentLoaded",()=>setLanguage(localStorage.getItem("lang")||"de"));
+</script>
+
+</body>
 </html>
 
