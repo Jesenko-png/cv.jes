@@ -1,0 +1,10 @@
+.len {
+  text-align: center;
+}
+
+.len p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
