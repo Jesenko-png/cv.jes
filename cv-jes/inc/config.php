@@ -3,8 +3,8 @@
 
 declare(strict_types=1);
 
-$DB_HOST = '127.0.0.1';
-$DB_NAME = 'coment';
+$DB_HOST = 'localhost';
+$DB_NAME = 'cv';
 $DB_USER = 'root';
 $DB_PASS = '';
 $DB_CHARSET = 'utf8mb4';
@@ -17,3 +17,4 @@ $options = [
 
 $dsn = "mysql:host={$DB_HOST};dbname={$DB_NAME};charset={$DB_CHARSET}";
 $pdo = new PDO($dsn, $DB_USER, $DB_PASS, $options);
+
